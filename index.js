@@ -8,4 +8,6 @@ buttonOne.addEventListener("click", mrBig);
 
 function mrBig() {
     image.setAttribute("src", "https://stylecaster.com/wp-content/uploads/2014/10/mr-big-carrie.jpg?w=500&h=339&crop=1"); 
+    text.textContent = "WILL THEY GET MARRIED?";
+    
 }
