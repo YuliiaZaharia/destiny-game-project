@@ -36,4 +36,21 @@ function aidan() {
     text.textContent = "ARE THEY GOING TO BE HAPPY?";
     buttonOne.textContent = "YES"; 
     buttonTwo.textContent = "NO"; 
+    
+    buttonOne.addEventListener("click", happy);
+    buttonTwo.addEventListener("click", unhappy); 
+}
+
+function happy() {
+    image.setAttribute("src", "https://image-ie.s3.eu-west-1.amazonaws.com/uploads/2021/04/16111841/satc-aidan-baby-1528237373.png"); 
+    text.textContent = "YES AND THEY WILL HAVE A CHILD!";
+    buttonOne.style = "display: none";
+    buttonTwo.style = "display: none";
+}
+
+function unhappy() {
+    image.setAttribute("src", "https://i.insider.com/64cd269f8df5080019d304e1?width=1000&format=jpeg&auto=webp"); 
+    text.textContent = "CARRIE IS GOING TO BETRAY HIM AND THEY BREAK UP!";
+    buttonOne.style = "display: none";
+    buttonTwo.style = "display: none";
 }
