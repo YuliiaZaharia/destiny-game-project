@@ -4,7 +4,8 @@ const text = document.querySelector("h2");
 const buttonOne = document.querySelector("#one");
 const buttonTwo = document.querySelector("#two"); 
 
-buttonOne.addEventListener("click", mrBig); 
+buttonOne.addEventListener("click", mrBig);
+buttonTwo.addEventListener("click", aidan);
 
 function mrBig() {
     image.setAttribute("src", "https://stylecaster.com/wp-content/uploads/2014/10/mr-big-carrie.jpg?w=500&h=339&crop=1"); 
@@ -28,4 +29,11 @@ function neverMarried() {
     text.textContent = "HE WILL BREAK UP WITH HER BEFORE MARRIAGE";
     buttonOne.style = "display: none";
     buttonTwo.style = "display: none";
+}
+
+function aidan() {
+    image.setAttribute("src", "https://i.insider.com/620cd6b0b20df700180a1408?width=700"); 
+    text.textContent = "ARE THEY GOING TO BE HAPPY?";
+    buttonOne.textContent = "YES"; 
+    buttonTwo.textContent = "NO"; 
 }
